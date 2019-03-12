@@ -11,7 +11,7 @@
 
 #include "header.h"
 
-/* Declarations of prototype functions */
+/* Declarations of functions prototypes */
 
 int areaEngine(void);
 int volumeEngine(void);
@@ -26,7 +26,7 @@ int main()
 	return 0;
 }
 
-/* A prototype function that prints error message for user. */
+/* A function that prints error message for user. */
 
 void printError(char printString[])
 {
