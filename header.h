@@ -13,13 +13,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-/* Prototypes */
-
-int areaEngine(void);
-int volumeEngine(void);
-int startEngine(void);
-void printError(char errorString[]);
-
 /* Variables */
 
 float radius;

@@ -11,6 +11,21 @@
 
 #include "header.h"
 
+/* Declarations of prototype functions */
+
+int areaEngine(void);
+int volumeEngine(void);
+int startEngine(void);
+void printError(char errorString[]);
+
+int main()
+{
+	/* This starts the function startEngine */
+	
+	startEngine();
+	return 0;
+}
+
 /* A prototype function that prints error message for user. */
 
 void printError(char printString[])
@@ -335,10 +350,3 @@ int volumeEngine(void)
 	return 0;
 }
 
-int main()
-{
-	/* This starts the function startEngine */
-	
-	startEngine();
-	return 0;
-}
