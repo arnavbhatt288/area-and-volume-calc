@@ -39,19 +39,10 @@ int startEngine(void)
 	
 	int startChoice;
 	
-	/* 
-	 * A macro block which cheks which OS is it and then it clears the screen of
-	 * Terminal or Command Prompt
-	*/
+	/* A piece of code which clears the screen. */
 	
-	#ifdef __linux__
-			system("clear");
-	#elif _WIN32
-			system("cls");
-	#else
-			system("clear");
-	#endif
-	
+	printf("\e[1;1H\e[2J");
+
 	/* A welcome string. */
 	
 	printf("+-------------------------------------+\n");
