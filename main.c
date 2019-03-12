@@ -11,26 +11,22 @@
 
 #include "header.h"
 
-/* Declarations of functions prototypes */
+/* Global Variables */
 
-int areaEngine(void);
-int volumeEngine(void);
-int startEngine(void);
-void printError(char errorString[]);
-
-int main()
-{
-	/* This starts the function startEngine */
-	
-	startEngine();
-	return 0;
-}
+float radius;
+float length;
+float breadth;
+float height;
+float side;
+float slantHeight;
+int shapeChoice;
+int continuation;
 
 /* A function that prints error message for user. */
 
 void printError(char printString[])
 {
-	printf("Error! : %s The program will now exit...\n", printString);
+	printf("Error! : %s", printString);
 }
 
 int startEngine(void)
@@ -71,7 +67,8 @@ int startEngine(void)
 	}
 	else
 	{
-		printError("Invalid choice!");
+		printError("Invalid choice! The program will now exit...\n");
+		exit (0);
 	}
 	
 	return 0;
@@ -101,8 +98,8 @@ int areaEngine(void)
 		
 		if(shapeChoice > 6)
 		{
-			printError("Invalid choice!");
-			exit(0);
+			printError("Invalid choice! Please try again -\n\n");
+			continue;
 		}
 	
 		/*
@@ -118,8 +115,8 @@ int areaEngine(void)
 			scanf("%i", &areaChoice);
 			if(areaChoice > 2)
 			{
-				printError("Invalid choice!");
-				exit(0);
+				printError("Invalid choice! Please try again -\n\n");
+				continue;
 			}
 		}
 
@@ -189,7 +186,7 @@ int areaEngine(void)
 				
 				if(slantHeight < radius)
 				{
-					printError("Radius cannot be greater than the slant height!");
+					printError("Radius cannot be greater than the slant height! The program will now exit...\n");
 					exit (0);
 				}
 				
@@ -324,8 +321,8 @@ int volumeEngine(void)
 			
 			default:
 				{
-					printError("Invalid choice!");
-					exit (0);
+					printError("Invalid choice! Please try again -\n\n");
+					continue;
 				}
 		}
 		
@@ -341,3 +338,10 @@ int volumeEngine(void)
 	return 0;
 }
 
+int main()
+{
+	/* This starts the function startEngine */
+	
+	startEngine();
+	return 0;
+}

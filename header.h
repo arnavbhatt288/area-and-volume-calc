@@ -13,16 +13,12 @@
 #include <stdlib.h>
 #include <math.h>
 
-/* Variables */
+/* Functions Prototypes */
 
-float radius;
-float length;
-float breadth;
-float height;
-float side;
-float slantHeight;
-int shapeChoice;
-int continuation;
+int areaEngine(void);
+int volumeEngine(void);
+int startEngine(void);
+void printError(char errorString[]);
 
 /* Defines */
 
