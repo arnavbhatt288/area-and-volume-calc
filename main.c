@@ -179,15 +179,10 @@ int areaEngine(void)
 				printf("Enter the slant height -\n");
 				scanf("%f", &slantHeight);
 				
-				/*
-				 * If the user entered radius which is greater than slant height then this part of 
-				 * code will give error to the user and will end the program.
-				*/
-				
 				if(slantHeight < radius)
 				{
-					printError("Radius cannot be greater than the slant height! The program will now exit...\n");
-					exit (0);
+					printError("Radius cannot be greater than the slant height! Please try again\n\n");
+					continue;
 				}
 				
 				if(areaChoice == 1)
