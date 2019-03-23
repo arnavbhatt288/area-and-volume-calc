@@ -22,6 +22,6 @@ void printError(char errorString[]);
 
 /* Defines */
 
-#define PI 		3.14285714286
+#define PI 		3.141592653589793
 #define SQUARE(x)		x * x
 #define CUBE(x)		x * x * x
