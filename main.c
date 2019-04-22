@@ -1,9 +1,9 @@
 /*
 * Program: Area and volume calculator
 *	
-* Module: header.h
+* Module: main.c
 *	
-* Purpose: A header file with neccessary headers, prototypes, variables and definations.
+* Purpose: Main code.
 */
 
 
